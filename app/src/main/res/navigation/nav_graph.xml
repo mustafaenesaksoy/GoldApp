@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.enesaksoy.goldapp.view.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_firmaFragment"
+            app:destination="@id/firmaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_toplamIscilikFragment"
+            app:destination="@id/toplamIscilikFragment" />
+
+    </fragment>
+    <fragment
+        android:id="@+id/firmaFragment"
+        android:name="com.enesaksoy.goldapp.view.FirmaFragment"
+        android:label="FirmaFragment" >
+        <action
+            android:id="@+id/action_firmaFragment_to_addFragment"
+            app:destination="@id/addFragment" />
+        <action
+            android:id="@+id/action_firmaFragment_to_islemFragment"
+            app:destination="@id/islemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/toplamIscilikFragment"
+        android:name="com.enesaksoy.goldapp.view.ToplamIscilikFragment"
+        android:label="ToplamIscilikFragment" />
+    <fragment
+        android:id="@+id/addFragment"
+        android:name="com.enesaksoy.goldapp.view.AddFragment"
+        android:label="AddFragment" />
+    <fragment
+        android:id="@+id/islemFragment"
+        android:name="com.enesaksoy.goldapp.view.IslemFragment"
+        android:label="IslemFragment" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+        <action
+            android:id="@+id/action_islemFragment_to_addIslemFragment"
+            app:destination="@id/addIslemFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addIslemFragment"
+        android:name="com.enesaksoy.goldapp.view.AddIslemFragment"
+        android:label="AddIslemFragment" >
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>

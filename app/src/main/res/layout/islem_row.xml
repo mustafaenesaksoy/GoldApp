@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginBottom="20dp">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/durum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A/V : "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/tarih"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Tarih : ">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/miktar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Miktar : "
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/milyem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Milyem : "
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="50dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/iscilik"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="iscilik : ">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/hasSonuc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sonuc : "
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="10dp">
+
+        </TextView>
+
+    </LinearLayout>
+
+</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
